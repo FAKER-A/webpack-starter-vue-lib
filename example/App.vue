@@ -1,9 +1,4 @@
-<template>
-  <div>
-    <h1>{{ msg }}</h1>
-    <button @click="click">点我</button>
-  </div>
-</template>
+
 
 <script>
 export default {
@@ -16,6 +11,9 @@ export default {
     click() {
       this.$alert(111)
     }
+  },
+  render() {
+    return <div>xxxxxxx</div>
   }
 }
 </script>

@@ -44,5 +44,9 @@
     "not ie < 11",
     "last 2 versions",
     "> 1%"
-  ]
+  ],
+  "dependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.0.0"
+  }
 }
