@@ -2,12 +2,13 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ProcessBarPlugin = require('progress-bar-webpack-plugin')
+const packageJson = require(path.resolve(process.cwd(), 'packjson'))
 module.exports = {
   entry: path.resolve(process.cwd(), 'index.js'), 
   output: {
     path: path.resolve(process.cwd(), 'dist'),     
-    filename: 'webpack-vue-eg.js',           // 文件名       
-    library: 'webpack-vue-eg',               // 包名
+    filename: `${packageJson.name}.js`,           // 文件名       
+    library: `${packageJson.name}`,               // 包名
     libraryTarget: 'umd'                     // 格式
   },
   resolve: {
