@@ -2,7 +2,7 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const ProcessBarPlugin = require('progress-bar-webpack-plugin')
-const packageJson = require(path.resolve(process.cwd(), 'packjson'))
+const packageJson = require(path.resolve(process.cwd(), 'package.json'))
 module.exports = {
   entry: path.resolve(process.cwd(), 'index.js'), 
   output: {
