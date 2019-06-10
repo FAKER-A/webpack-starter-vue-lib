@@ -8,6 +8,10 @@ webpack-starter-vue-lib
 ```javascript
   npm start | npm run dev
 ```
+## 测试
+```javascript
+  npm run test | npm run test:coverage
+```
 ## 打包
 ```javascript
   npm run build
